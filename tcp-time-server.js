@@ -3,8 +3,7 @@ let port = process.argv[2];
 let timeWizard = new Date();
 
 function zeroFillTwoIntegers(data) {
-	if(data.length === 1) return 0 + data;
-	return data;
+	return (data.length === 1 ? '0' : '') + data;
 }
 
 let server = net.createServer(socket => {
