@@ -1,6 +1,6 @@
-let http = require('http');
-let bl = require('bl');
-let responses = [];
+var http = require('http');
+var bl = require('bl');
+var responses = [];
 
 processCommandArguments();
 

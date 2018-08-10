@@ -1,5 +1,5 @@
-let dirPath = process.argv[2];
-let fileExt = process.argv[3];
+var dirPath = process.argv[2];
+var fileExt = process.argv[3];
 
 let listModule = require('./module-list-files-ext.js');
 function listFiles(err, list) {

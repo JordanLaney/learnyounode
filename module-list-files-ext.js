@@ -1,4 +1,4 @@
-let fs = require('fs');
+var fs = require('fs');
 
 module.exports = function(dirPath, fileExt, callback) {
 	fs.readdir(dirPath,function(err, list) {

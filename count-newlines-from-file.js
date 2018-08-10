@@ -1,5 +1,5 @@
-let fs = require('fs');
+var fs = require('fs');
 
-let buf = fs.readFileSync(process.argv[2]);
-let str = buf.toString();
+var buf = fs.readFileSync(process.argv[2]);
+var str = buf.toString();
 console.log(str.split('\n').length - 1);

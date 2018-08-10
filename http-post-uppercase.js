@@ -1,5 +1,5 @@
-let http = require('http');
-let map = require('through2-map');
+var http = require('http');
+var map = require('through2-map');
 
 http.createServer((request, response) => {
 	if(request.method == 'POST') {

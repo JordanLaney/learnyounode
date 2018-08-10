@@ -1,11 +1,9 @@
-let dirPath = process.argv[2];
-let fileExt = process.argv[3];
-let fs = require('fs');
+var fs = require('fs');
 
-fs.readdir(dirPath,function(err, list) {
+fs.readdir(process.argv[2], (err, list) => {
 	if(err) throw err;
 	for(let i = 0; i < list.length; i++) {
-		if(fileExt === list[i].split('.').pop() && list[i].includes('.')) {
+		if(process.argv[3] === list[i].split('.').pop() && list[i].includes('.')) {
 			console.log(list[i]);
 		}
 	}

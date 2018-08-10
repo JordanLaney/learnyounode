@@ -1,5 +1,5 @@
-let http = require('http')
-let bl = require('bl');
+var http = require('http')
+var bl = require('bl');
 
 http.get(process.argv[2], response => {
 	response.pipe(bl(function(err, data) {

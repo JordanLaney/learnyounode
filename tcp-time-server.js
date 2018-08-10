@@ -1,6 +1,6 @@
-let net = require('net');
-let port = process.argv[2];
-let timeWizard = new Date();
+var net = require('net');
+var port = process.argv[2];
+var timeWizard = new Date();
 
 function zeroFillTwoIntegers(data) {
 	return (data.length === 1 ? '0' : '') + data;
